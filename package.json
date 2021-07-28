@@ -1,0 +1,38 @@
+{
+  "name": "git-keep-cli",
+  "version": "1.0.0",
+  "description": "CLI for Git Keep",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudoDotDog/Git-Keep-CLI.git"
+  },
+  "author": "WMXPY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SudoDotDog/Git-Keep-CLI/issues"
+  },
+  "homepage": "https://github.com/SudoDotDog/Git-Keep-CLI#readme",
+  "dependencies": {
+    "@sudoo/coco": "^1.8.5",
+    "@sudoo/io": "^1.8.0"
+  },
+  "devDependencies": {
+    "@sudoo/build-utils": "^1.0.0",
+    "@sudoo/triforce": "^2.9.29"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "instrument": true,
+    "reporter": [
+      "json",
+      "text-summary"
+    ],
+    "report-dir": "coverage",
+    "sourceMap": true
+  }
+}
